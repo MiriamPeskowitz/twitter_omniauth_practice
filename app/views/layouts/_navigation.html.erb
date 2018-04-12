@@ -1,0 +1,14 @@
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+  
+   
+        <li><%= link_to 'Home', pages_path %></li>
+        <% if current_user %>
+          <li>Signed in as <%= current_user.name %></li>
+        <% else %>
+          <li><%= link_to "Sign in with Twitter", "/auth/twitter" %></li>
+        <% end %>
+        </ul>
+    </div>
+  </div>
+</nav>
